@@ -96,6 +96,7 @@
      {
          List<ModContainer> rejects = Lists.newArrayList();
 +        List<ModContainer> hackpacks = Lists.newArrayList();
++
          for (Entry<ModContainer, NetworkModHolder> networkMod : NetworkRegistry.INSTANCE.registry().entrySet())
          {
              boolean result = networkMod.getValue().check(listData, side);
